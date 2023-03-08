@@ -1,1 +1,11 @@
-TreesCountOnMap: 1047 TreesCountOnMap: 21
+For the forestation = 1.0 1try TreesCountOnMap: 104756 treesBeingInfected: 9521
+For the forestation = 1.0 2try TreesCountOnMap: 104756 treesBeingInfected: 9621
+For the forestation = 1.0 3try TreesCountOnMap: 104756 treesBeingInfected: 9721
+For the forestation = 1.0 4try TreesCountOnMap: 104756 treesBeingInfected: 9821
+For the forestation = 1.0 5try TreesCountOnMap: 104756 treesBeingInfected: 9921
+For the forestation = 1.0 6try TreesCountOnMap: 104756 treesBeingInfected: 10021
+For the forestation = 1.0 7try TreesCountOnMap: 104756 treesBeingInfected: 10121
+For the forestation = 1.0 8try TreesCountOnMap: 104756 treesBeingInfected: 10221
+For the forestation = 1.0 9try TreesCountOnMap: 104756 treesBeingInfected: 10321
+For the forestation = 1.0 10try TreesCountOnMap: 104756 treesBeingInfected: 10421
+For the forestation = 1.0 11try TreesCountOnMap: 104756 treesBeingInfected: 10521
