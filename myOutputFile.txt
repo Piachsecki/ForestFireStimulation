@@ -1,0 +1,1 @@
+TreesCountOnMap: 1047 TreesCountOnMap: 21
