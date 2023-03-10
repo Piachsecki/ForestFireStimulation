@@ -11,9 +11,9 @@ public class BurningForestSimulation {
     public static int treesCountOnMap;
     public static int treesBeingInfected;
 
-    private String[][] map;
-    private int size;
-    private Double forestation;
+    private final String[][] map;
+    private final int size;
+    private final Double forestation;
 
     public BurningForestSimulation(int size, Double forestation) {
         this.size = size;
@@ -21,16 +21,30 @@ public class BurningForestSimulation {
         this.map = new String[size][size];
     }
 
-    public static void main(String[] args) throws IOException {
-        File outputFile = new File("myOutputFile.txt");
+    public static void main(String[] args) {
+        try {
 
-        for (
-                double number = BigDecimal.valueOf(0).setScale(2, RoundingMode.HALF_UP).doubleValue();
-                number <= 1.05;
-                number += 0.05) {
-            BurningForestSimulation burningForestSimulation = new BurningForestSimulation(100, number);
 
-            extracted(burningForestSimulation, outputFile);
+            File outputFile = new File("myOutputFile.txt");
+            BufferedWriter writer = new BufferedWriter(
+                    new BufferedWriter(
+                            new FileWriter(outputFile)));
+            try {
+
+
+                for (
+                        double number = BigDecimal.valueOf(0).setScale(2, RoundingMode.HALF_UP).doubleValue();
+                        number <= 1.05;
+                        number += 0.05) {
+                    BurningForestSimulation burningForestSimulation = new BurningForestSimulation(10, number);
+
+                    extracted(burningForestSimulation, writer, outputFile);
+                }
+            } finally {
+                writer.close();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
 
@@ -40,28 +54,32 @@ public class BurningForestSimulation {
 
     }
 
-    private static void extracted(BurningForestSimulation burningForestSimulation, File outputFile) {
-        try {
-            BufferedWriter writer = new BufferedWriter(
-                    new BufferedWriter(
-                            new FileWriter(outputFile)));
-            burningForestSimulation.map_initialization();
+    private static void extracted(BurningForestSimulation burningForestSimulation,
+                                  BufferedWriter writer,
+                                  File outputFile) throws IOException {
 
-            for (int i = 0; i <= 10; i++) {
-                burningForestSimulation.makeSimulation();
-                writer.write("For the forestation = " + burningForestSimulation.forestation + " " + (i + 1) + "try ");
-                writer.write("TreesCountOnMap: " + treesCountOnMap);
-                writer.write(" treesBeingInfected: " + treesBeingInfected);
+
+        burningForestSimulation.map_initialization();
+        burningForestSimulation.print_map();
+
+        for (int i = 0; i < 10; i++) {
+            burningForestSimulation.makeSimulation();
+            writer.write("For the forestation = " + burningForestSimulation.forestation + " " + (i + 1) + "try ");
+            writer.write("TreesCountOnMap: " + treesCountOnMap);
+            writer.write(" treesBeingInfected: " + treesBeingInfected);
+            if(i == 9 && burningForestSimulation.forestation != 0){
                 writer.newLine();
-                writer.flush();
+                double d = (double)treesBeingInfected/treesCountOnMap;
+                writer.write("Percentage of trees that were burnt during the process: " + (d*100) + "%");
             }
-
-            burningForestSimulation.print_map();
-
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            writer.newLine();
+            writer.flush();
         }
+        System.out.println();
+        burningForestSimulation.print_map();
+        System.out.println();
+
+
     }
 
 
@@ -72,7 +90,7 @@ public class BurningForestSimulation {
             for (int j = 0; j < size; j++) {
                 if ("B".equals(map[i][j])) {
                     indexOfRowCurrentlyBurning = i;
-                    System.out.println("indexOfRowCurrentlyBurning = " + i);
+//                    System.out.println("indexOfRowCurrentlyBurning = " + i);
                     break;
                 }
             }
@@ -114,8 +132,8 @@ public class BurningForestSimulation {
 
 
             }
-            System.out.println("Amount of trees on the beginning: " + treesCountOnMap);
-            System.out.println("Amount of infected trees after this turn: " + treesBeingInfected);
+//            System.out.println("Amount of trees on the beginning: " + treesCountOnMap);
+//            System.out.println("Amount of infected trees after this turn: " + treesBeingInfected);
         }
 
 
