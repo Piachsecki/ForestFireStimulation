@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbcb6e7b-b5d4-43a5-8407-9db0cbaaf7a0" name="Changes" comment="changed the forestation type to Double to be more precise in counting">
+    <list default="true" id="dbcb6e7b-b5d4-43a5-8407-9db0cbaaf7a0" name="Changes" comment="The first version of the given project is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myOutputFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myOutputFile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BurningForestSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BurningForestSimulation.java" afterDir="false" />
@@ -25,17 +25,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "last_opened_file_path": "C:/Users/krpia/OneDrive/Pulpit/Game2DJava"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/krpia/OneDrive/Pulpit/StudiaProgramowanie/ForestFireStimulatiion&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurningForestSimulation" />
@@ -55,7 +55,9 @@
       <updated>1678227058094</updated>
       <workItem from="1678227059441" duration="1085000" />
       <workItem from="1678263948466" duration="14305000" />
-      <workItem from="1678450723050" duration="4791000" />
+      <workItem from="1678450723050" duration="4881000" />
+      <workItem from="1678462063643" duration="2207000" />
+      <workItem from="1678553729108" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="changed the forestation type to Double to be more precise in counting">
       <created>1678292547455</created>
@@ -64,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678292547455</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The first version of the given project is done">
+      <created>1678457153317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678457153317</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +93,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changed the forestation type to Double to be more precise in counting" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the forestation type to Double to be more precise in counting" />
+    <MESSAGE value="The first version of the given project is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="The first version of the given project is done" />
   </component>
 </project>

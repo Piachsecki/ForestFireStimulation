@@ -58,7 +58,8 @@ public class BurningForestSimulation {
                                   BufferedWriter writer,
                                   File outputFile) throws IOException {
 
-
+        treesCountOnMap = 0;
+        treesBeingInfected = 0;
         burningForestSimulation.map_initialization();
         burningForestSimulation.print_map();
 
